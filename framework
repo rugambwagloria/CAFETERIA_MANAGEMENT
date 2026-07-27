@@ -1,0 +1,69 @@
+Presentation Layer (UI)
+        │
+        ▼
+Business Logic Layer (Controllers & Services)
+        │
+        ▼
+Data Layer (Database Access)
+
+
+
+
+
+
+parliament-cafeteria/
+│
+├── public/                     ← Publicly accessible
+│   ├── index.php
+│   ├── login.php
+│   ├── logout.php
+│   ├── dashboard.php
+│   ├── css/
+│   │     └── style.css
+│   ├── js/
+│   └── assets/
+│         ├── images/
+│         └── icons/
+│
+├── app/
+│   ├── controllers/
+│   │      ├── LoginController.php
+│   │      ├── DashboardController.php
+│   │      └── UserController.php
+│   │
+│   ├── services/
+│   │      ├── AuthService.php
+│   │      ├── SessionService.php
+│   │      └── ValidationService.php
+│   │
+│   ├── models/
+│   │      ├── User.php
+│   │      ├── Department.php
+│   │      ├── Meal.php
+│   │      └── Billing.php
+│   │
+│   └── views/
+│          ├── auth/
+│          ├── dashboard/
+│          └── layouts/
+│
+├── config/
+│   ├── database.php
+│   ├── config.php
+│   └── constants.php
+│
+├── storage/
+│   ├── logs/
+│   ├── uploads/
+│   └── cache/
+│
+├── database/
+│   ├── schema.sql
+│   ├── seed.sql
+│   └── migrations/
+│
+├── vendor/                     ← Composer
+│
+├── .env
+├── .gitignore
+└── README.md
