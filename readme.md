@@ -171,12 +171,6 @@ Developed by
 
 **IT INTERNS 2026**
 
-Bachelor of Information Technology & Computing
-
-Kyambogo University
-
-ICT Intern
-
 Parliament of Uganda
 
 2026
