@@ -169,7 +169,7 @@ Future Improvements
 
 Developed by
 
-**Kamba Timothy Handy**
+**IT INTERNS 2026**
 
 Bachelor of Information Technology & Computing
 
