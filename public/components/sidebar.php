@@ -115,3 +115,15 @@ $current = $current ?? basename($_SERVER['PHP_SELF']);
     </div>
 
 </aside>
+<!-- Expected output: the dashboard should have the following  components
+Sidebar
+│
+├── Logo
+├── Workspace Selector
+├── Navigation Title
+├── Navigation Links
+├── Bottom Information
+└── Logout 
+The tabs existing are Dashboard, Food orders, Daily Menus, kitchen dashboard, Departments, Customers, Customer categories, 
+Meal coupons, Inovices, Payments, Credit Accounts, Catering Management, Reports, Audit LOgs, User Management, Settings
+Logout-->

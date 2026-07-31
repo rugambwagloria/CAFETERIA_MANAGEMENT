@@ -1,0 +1,164 @@
+ /* --- SIDEBAR --- 
+
+        
+ The color of the dashboard sidebar should be  #0E172A, and when a tab is selected, the color becomes #2563EB */
+:root {
+            --bg: #f3f4f6;
+            --card: #ffffff;
+            --border: #e6e7ea;
+            --text: #1c1c1e;
+            --muted: #6b7076;
+            --blue: #2f5fd6;
+            --red: #d6392f;
+            --green: #1c9a4b;
+            --black: #111214;
+        }
+ .sidebar {
+            width: 200px;
+            flex-shrink: 0;
+            background: #0E172A;
+            border-right: 1px solid var(--border);
+            height: 100vh;
+            position: sticky;
+            top: 0;
+            overflow-y: scroll;
+            padding: 20px 16px;
+            display: flex;
+            flex-direction: column;
+            /* Hide scrollbar */
+            scrollbar-width: none;      /* Firefox */
+            -ms-overflow-style: none;   /* IE and old Edge */
+            }
+
+.sidebar::-webkit-scrollbar {
+             display: none;              /* Chrome, Edge, Safari */
+}
+
+        .sidebar .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .sidebar .logo img {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+            flex-shrink: 0;
+        }
+
+        .sidebar .logo h3 {
+            margin: 0;
+            font-size: 13px;
+            line-height: 1.2;
+            color:#ffffff;
+        }
+
+        .sidebar .logo p {
+            margin: 2px 0 0;
+            font-size: 11px;
+            color: #ffffff;
+        }
+
+        .sidebar .workspace {
+            margin-bottom: 18px;
+        }
+
+        .sidebar .workspace h5 {
+            font-size: 10px;
+            letter-spacing: .05em;
+            color: #94a3b8;
+            margin: 0 0 8px;
+        }
+
+        .workspace-buttons {
+            display: flex;
+            gap: 6px;
+        }
+
+        .workspace-buttons button {
+            flex: 1;
+            padding: 8px 6px;
+            font-size: 11px;
+            font-weight: 700;
+            border-radius: 8px;
+            background:#1E293B;
+            color:#CBD5E1;
+            border:none;
+            cursor: pointer;
+        }
+
+        .workspace-buttons button.active {
+        background:#2563EB;
+        color:white;
+
+        }
+
+        .menu-title {
+            font-size: 10px;
+            font-weight: 800;
+            letter-spacing: .05em;
+            color: #94a3b8;
+            margin: 8px 0 10px;
+        }
+
+        .sidebar .menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            flex: 1;
+        }
+
+        .sidebar .menu li a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 9px 10px;
+            border-radius: 8px;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 500;
+            margin-bottom: 2px;
+        }
+        .sidebar .menu li a i {
+            width: 16px;
+            text-align: center;
+            color: #006aff;
+        }
+
+        .sidebar .menu li a:hover {
+            background: #1e293b;
+        }
+
+        .sidebar .menu li.active a {
+            background: #2563eb;
+            color: #ffffff;
+        }
+
+        .sidebar .menu li.active a i {
+            color: #ffffff;
+        }
+
+        .sidebar-footer {
+            border-top: 1px solid var(--border);
+            padding-top: 12px;
+            margin-top: 12px;
+        }
+
+        .logout-btn {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 9px 10px;
+            border-radius: 8px;
+            color: #f87171;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .logout-btn:hover {
+            background: #1e293b;
+        }
